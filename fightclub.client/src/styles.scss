@@ -1,0 +1,71 @@
+@import "./app/assets/styles/styles.scss";
+@import "./app/assets/styles/elements.scss";
+@import "./app/assets/styles/specific.scss";
+@import "./app/assets/styles/animation.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  user-select: none;
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+html, body, app-root {
+  display: flex;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: var(--bg1);
+  overflow: hidden;
+}
+
+img, video {
+  max-width: 100%;
+  max-height: 100%;
+  pointer-events: none;
+}
+
+span {
+  white-space: nowrap;
+}
+
+textarea {
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+input {
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+
+  &:placeholder-shown {
+    color: var(--background-third-color) !important;
+  }
+
+  &::placeholder {
+    opacity: 0;
+  }
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+  --bg1: #e4e4e4;
+  --bg2: #141414;
+  --bg3: #292929;
+  --bg4: #dedede;
+  --cr1: #ffffff;
+  --cr2: #dddddd;
+  --cr3: #939393;
+  --cr4: #6d6d6d;
+  --cr5: #333333;
+  --br1: #d7d7d7cd;
+  --br2: #7a7a7acd;
+}

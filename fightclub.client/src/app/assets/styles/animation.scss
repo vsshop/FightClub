@@ -1,0 +1,26 @@
+//BASIC
+@keyframes uprise {
+  0% {
+    transform: translateY(10vh);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.animate-uprise {
+  animation: uprise 0.3s ease-out;
+
+  $base-duration: 0.3s;
+  $increment: 0.05s;
+
+  @for $i from 2 through 10 {
+    &:nth-child(#{$i}) {
+      animation-duration: $base-duration + ($i - 1) * $increment;
+    }
+  }
+}

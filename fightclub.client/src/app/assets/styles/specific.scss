@@ -1,0 +1,20 @@
+app-icon {
+
+  &.first {
+    .fa-secondary, .fa-secondary {
+      fill: var(--background-sixth-color);
+    }
+  }
+
+  &.second {
+    .fa-secondary {
+      fill: var(--background-second-color);
+      opacity: 1;
+    }
+
+    .fa-primary {
+      fill: var(--background-forth-color);
+      opacity: 1;
+    }
+  }
+}
