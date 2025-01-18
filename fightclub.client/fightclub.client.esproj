@@ -9,5 +9,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="src\app\modules\base\services\api\" />
+    <Folder Include="src\app\modules\main\components\" />
   </ItemGroup>
 </Project>
